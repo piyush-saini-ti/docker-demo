@@ -23,7 +23,7 @@ public class UserController {
 
     @GetMapping("/user")
     private ResponseEntity<?> hiUser(@RequestParam String name){
-        return ResponseEntity.ok("hi "+name);
+        return ResponseEntity.ok("hi from docker running on AWS EC2 Container "+name);
     }
 
 }
